@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/GetData?xsd=2" uri="xml-resources/web-service-references/GetData/wsdl/localhost_8080/Chat_Application_Web_Server/GetData.xsd_2.xsd"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/AddData?xsd=2" uri="xml-resources/web-service-references/AddData/wsdl/localhost_8080/Chat_Application_Web_Server/AddData.xsd_2.xsd"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/AddUser?wsdl" uri="xml-resources/web-service-references/AddUser/wsdl/localhost_8080/Chat_Application_Web_Server/AddUser.wsdl"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/AddUser?xsd=1" uri="xml-resources/web-service-references/AddUser/wsdl/localhost_8080/Chat_Application_Web_Server/AddUser.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/LoginUser?wsdl" uri="xml-resources/web-service-references/LoginUser/wsdl/localhost_8080/Chat_Application_Web_Server/LoginUser.wsdl"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/LoginUser?xsd=1" uri="xml-resources/web-service-references/LoginUser/wsdl/localhost_8080/Chat_Application_Web_Server/LoginUser.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/AddData?wsdl" uri="xml-resources/web-service-references/AddData/wsdl/localhost_8080/Chat_Application_Web_Server/AddData.wsdl"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/AddData?xsd=1" uri="xml-resources/web-service-references/AddData/wsdl/localhost_8080/Chat_Application_Web_Server/AddData.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/ValidateUser?wsdl" uri="xml-resources/web-service-references/ValidateUser/wsdl/localhost_8080/Chat_Application_Web_Server/ValidateUser.wsdl"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/ValidateUser?xsd=1" uri="xml-resources/web-service-references/ValidateUser/wsdl/localhost_8080/Chat_Application_Web_Server/ValidateUser.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/GetMessages?wsdl" uri="xml-resources/web-service-references/GetMessages/wsdl/localhost_8080/Chat_Application_Web_Server/GetMessages.wsdl"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/GetMessages?xsd=1" uri="xml-resources/web-service-references/GetMessages/wsdl/localhost_8080/Chat_Application_Web_Server/GetMessages.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/GetData?wsdl" uri="xml-resources/web-service-references/GetData/wsdl/localhost_8080/Chat_Application_Web_Server/GetData.wsdl"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/GetData?xsd=1" uri="xml-resources/web-service-references/GetData/wsdl/localhost_8080/Chat_Application_Web_Server/GetData.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/AddMessages?wsdl" uri="xml-resources/web-service-references/AddMessages/wsdl/localhost_8080/Chat_Application_Web_Server/AddMessages.wsdl"/>
+    <system systemId="http://localhost:8080/Chat_Application_Web_Server/AddMessages?xsd=1" uri="xml-resources/web-service-references/AddMessages/wsdl/localhost_8080/Chat_Application_Web_Server/AddMessages.xsd_1.xsd"/>
+</catalog>

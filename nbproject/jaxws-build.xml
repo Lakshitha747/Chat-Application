@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+        ===================
+        JAX-WS WSIMPORT SECTION
+        ===================
+    -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-AddUser" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/AddUser"/>
+        <property name="wsdl-AddUser" location="xml-resources/web-service-references/AddUser/wsdl/localhost_8080/Chat_Application_Web_Server/AddUser.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/AddUser" destdir="${build.generated.dir}/jax-wsCache/AddUser" wsdl="${wsdl-AddUser}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Chat_Application_Web_Server/AddUser?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-AddUser}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/AddUser"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/AddUser">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-AddUser" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/AddUser"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/web_server"/>
+    </target>
+    <target name="wsimport-client-LoginUser" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/LoginUser"/>
+        <property name="wsdl-LoginUser" location="xml-resources/web-service-references/LoginUser/wsdl/localhost_8080/Chat_Application_Web_Server/LoginUser.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/LoginUser" destdir="${build.generated.dir}/jax-wsCache/LoginUser" wsdl="${wsdl-LoginUser}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Chat_Application_Web_Server/LoginUser?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-LoginUser}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/LoginUser"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/LoginUser">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-LoginUser" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/LoginUser"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/web_server"/>
+    </target>
+    <target name="wsimport-client-GetData" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GetData"/>
+        <property name="wsdl-GetData" location="xml-resources/web-service-references/GetData/wsdl/localhost_8080/Chat_Application_Web_Server/GetData.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GetData" destdir="${build.generated.dir}/jax-wsCache/GetData" wsdl="${wsdl-GetData}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Chat_Application_Web_Server/GetData?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-GetData}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GetData"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GetData">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GetData" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/GetData"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/web_server"/>
+    </target>
+    <target name="wsimport-client-AddData" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/AddData"/>
+        <property name="wsdl-AddData" location="xml-resources/web-service-references/AddData/wsdl/localhost_8080/Chat_Application_Web_Server/AddData.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/AddData" destdir="${build.generated.dir}/jax-wsCache/AddData" wsdl="${wsdl-AddData}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Chat_Application_Web_Server/AddData?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-AddData}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/AddData"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/AddData">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-AddData" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/AddData"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/web_server"/>
+    </target>
+    <target name="wsimport-client-ValidateUser" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/ValidateUser"/>
+        <property name="wsdl-ValidateUser" location="xml-resources/web-service-references/ValidateUser/wsdl/localhost_8080/Chat_Application_Web_Server/ValidateUser.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ValidateUser" destdir="${build.generated.dir}/jax-wsCache/ValidateUser" wsdl="${wsdl-ValidateUser}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Chat_Application_Web_Server/ValidateUser?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-ValidateUser}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/ValidateUser"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/ValidateUser">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-ValidateUser" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/ValidateUser"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/web_server"/>
+    </target>
+    <target name="wsimport-client-GetMessages" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/GetMessages"/>
+        <property name="wsdl-GetMessages" location="xml-resources/web-service-references/GetMessages/wsdl/localhost_8080/Chat_Application_Web_Server/GetMessages.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/GetMessages" destdir="${build.generated.dir}/jax-wsCache/GetMessages" wsdl="${wsdl-GetMessages}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Chat_Application_Web_Server/GetMessages?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-GetMessages}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/GetMessages"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/GetMessages">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-GetMessages" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/GetMessages"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/web_server"/>
+    </target>
+    <target name="wsimport-client-AddMessages" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/AddMessages"/>
+        <property name="wsdl-AddMessages" location="xml-resources/web-service-references/AddMessages/wsdl/localhost_8080/Chat_Application_Web_Server/AddMessages.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/AddMessages" destdir="${build.generated.dir}/jax-wsCache/AddMessages" wsdl="${wsdl-AddMessages}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/Chat_Application_Web_Server/AddMessages?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-AddMessages}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/AddMessages"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/AddMessages">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-AddMessages" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/AddMessages"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/web_server"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-AddUser, wsimport-client-LoginUser, wsimport-client-GetData, wsimport-client-AddData, wsimport-client-ValidateUser, wsimport-client-GetMessages, wsimport-client-AddMessages"/>
+</project>

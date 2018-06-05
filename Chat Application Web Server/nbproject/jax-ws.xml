@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="AddUser">
+      <implementation-class>Web_Server.AddUser</implementation-class>
+    </service>
+    <service name="LoginUser">
+      <implementation-class>Web_Server.LoginUser</implementation-class>
+    </service>
+    <service name="GetData">
+      <implementation-class>Web_Server.GetData</implementation-class>
+    </service>
+    <service name="AddData">
+      <implementation-class>Web_Server.AddData</implementation-class>
+    </service>
+    <service name="ValidateUser">
+      <implementation-class>Web_Server.ValidateUser</implementation-class>
+    </service>
+    <service name="GetMessages">
+      <implementation-class>Web_Server.GetMessages</implementation-class>
+    </service>
+    <service name="AddMessages">
+      <implementation-class>Web_Server.AddMessages</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

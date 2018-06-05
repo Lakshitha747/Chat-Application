@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://Web_Server/" xmlns:ns1="http://jaxb.dev.java.net/array" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Web_Server/">
+
+    <xs:import namespace="http://jaxb.dev.java.net/array" schemaLocation="http://localhost:8080/Chat_Application_Web_Server/AddData?xsd=1"/>
+
+    <xs:element name="addData" type="tns:addData"/>
+
+    <xs:element name="addDataResponse" type="tns:addDataResponse"/>
+
+    <xs:complexType name="addData">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string" minOccurs="0"/>
+            <xs:element name="date" type="tns:simpleDateFormat" minOccurs="0"/>
+            <xs:element name="message" type="xs:string" minOccurs="0"/>
+            <xs:element name="username" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="simpleDateFormat">
+        <xs:complexContent>
+            <xs:extension base="tns:dateFormat">
+                <xs:sequence>
+                    <xs:element name="2DigitYearStart" type="xs:dateTime" minOccurs="0"/>
+                    <xs:element name="dateFormatSymbols" type="tns:dateFormatSymbols" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="dateFormat" abstract="true">
+        <xs:complexContent>
+            <xs:extension base="tns:format">
+                <xs:sequence>
+                    <xs:element name="calendar" type="xs:dateTime" minOccurs="0"/>
+                    <xs:element name="lenient" type="xs:boolean"/>
+                    <xs:element name="numberFormat" type="tns:numberFormat" minOccurs="0"/>
+                    <xs:element name="timeZone" type="tns:timeZone" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="format" abstract="true">
+        <xs:sequence/>
+    </xs:complexType>
+
+    <xs:complexType name="dateFormatSymbols">
+        <xs:sequence>
+            <xs:element name="amPmStrings" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="eras" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="localPatternChars" type="xs:string" minOccurs="0"/>
+            <xs:element name="months" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="shortMonths" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="shortWeekdays" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="weekdays" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="zoneStrings" type="ns1:stringArray" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="numberFormat" abstract="true">
+        <xs:complexContent>
+            <xs:extension base="tns:format">
+                <xs:sequence>
+                    <xs:element name="currency" type="tns:currency" minOccurs="0"/>
+                    <xs:element name="groupingUsed" type="xs:boolean"/>
+                    <xs:element name="maximumFractionDigits" type="xs:int"/>
+                    <xs:element name="maximumIntegerDigits" type="xs:int"/>
+                    <xs:element name="minimumFractionDigits" type="xs:int"/>
+                    <xs:element name="minimumIntegerDigits" type="xs:int"/>
+                    <xs:element name="parseIntegerOnly" type="xs:boolean"/>
+                    <xs:element name="roundingMode" type="tns:roundingMode" minOccurs="0"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="currency" final="extension restriction">
+        <xs:sequence/>
+    </xs:complexType>
+
+    <xs:complexType name="timeZone" abstract="true">
+        <xs:sequence>
+            <xs:element name="ID" type="xs:string" minOccurs="0"/>
+            <xs:element name="rawOffset" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="addDataResponse">
+        <xs:sequence>
+            <xs:element name="return" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="roundingMode">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="UP"/>
+            <xs:enumeration value="DOWN"/>
+            <xs:enumeration value="CEILING"/>
+            <xs:enumeration value="FLOOR"/>
+            <xs:enumeration value="HALF_UP"/>
+            <xs:enumeration value="HALF_DOWN"/>
+            <xs:enumeration value="HALF_EVEN"/>
+            <xs:enumeration value="UNNECESSARY"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
